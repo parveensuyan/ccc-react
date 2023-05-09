@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Dummy page</title>
 </head>
+<input type="text" id="numOne" value="" placeholder="Enter first number"/>
+<input type="text" id="numTwo" value=""  placeholder="Enter Second number"/>
+
+<button onclick ="sum()">Click this button</button>
+<!-- when a user is going to click on this button we are going the alert message -->
 <script>
     //function functionName
     //parameter will help you to pass the values to the function
-    function sum(numOne,numTwo ){ // function body 
+    function sum(){ 
+        // function body 
+        //int is a datatype int range 
+        
+        var numOne = parseInt(document.getElementById("numOne").value); //convert into int
+        var numTwo = parseInt(document.getElementById("numTwo").value);
         var total = numOne + numTwo ;
-        console.log(total);
+        alert(total);
         //is to print the output in the console
     }
-   sum(2,2); //function call
-   sum(5,5);
-   sum(4,4);
-   sum(6,6) ;
-   sum(8,3);
+    // function sayHi(){
+    //     var date = new Date();
+    //     date.getFullYear()
+    // }
+
 </script>
 <body>
     
