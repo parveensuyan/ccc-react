@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Dummy page</title>
 </head>
-<input type="text" id="numOne" value="" placeholder="Enter first number"/>
-<input type="text" id="numTwo" value=""  placeholder="Enter Second number"/>
+<input type="text" id="numOne" onchange="showMessage()" class = "function-numbers" value="2" placeholder="Enter first number"/>
+<input type="text" id="numTwo" class = "function-numbers" value="3"  placeholder="Enter Second number"/>
+<!-- <> syntax for html tags -->
 
-<button onclick ="sum()">Click this button</button>
-<!-- when a user is going to click on this button we are going the alert message -->
-<script>
-    //function functionName
+<!-- class can be use multiple -->
+<!-- id once in a program -->
+<button onclick ="sumTwoNumbers()">Click this button</button>
+<!-- when a user is going to click on this button we are going show the alert message -->
+<script> //javascript starts from here
+    //function(keyword) functionName
     //parameter will help you to pass the values to the function
-    function sum(){ 
+    function showMessage(){
+        alert ("hello class");
+    }
+    function sumTwoNumbers(){ 
         // function body 
         //int is a datatype int range 
-        
         var numOne = parseInt(document.getElementById("numOne").value); //convert into int
         var numTwo = parseInt(document.getElementById("numTwo").value);
-        var total = numOne + numTwo ;
+        var total = numOne - numTwo ;
         alert(total);
+        //more than one value which is array [0] = 1 ,[1] = 2
+        console.log();
+        
         //is to print the output in the console
     }
-    // function sayHi(){
-    //     var date = new Date();
-    //     date.getFullYear()
-    // }
 
 </script>
 <body>

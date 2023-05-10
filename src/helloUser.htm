@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello User</title>
+</head>
+<style>
+    /* #ID_NAME
+    .class_NAME */
+    #userName{
+        color : blue;
+        font-family: cursive;
+        font-size:30px ;
+    }
+</style>
+<body>
+    <p id = "userName"></p>
+    <script>
+          //array will start from 0
+            //n-1 = 5-1  = 4
+            //index => reference address for student names
+            //0 => a
+            //1 =>b
+            //2 =>c
+            //3=>d
+            //4=>w
+            //count the number of element in the array, replace the static value of 5 with countarray function
+        var student =["a","b","c","d","w"];
+                for(var i = 0;i<5;i++){
+                    // console.log(student[i]);
+                }
+            // 1. Ask user to enter the name
+          var status = confirm("Enter your name");
+          // 2. if user say yes show the prompt 
+          if(status == "true"){
+           var userName =  prompt("Please enter your name");
+           // 3. take the name from the prompt and display hello UserName
+            if(userName !=null){
+                document.getElementById("userName").innerHTML = "Hello "+userName;
+                //string concat => join two strings we are going to use the keyword +
+                //go to userName ID and insert the value
+            }
+            else{
+                //4. if not show Hello user!
+                document.getElementById("userName").innerHTML = "Hello User!";
+
+            }
+          }
+          else{
+            document.getElementById("userName").innerHTML = "Hope to see you Again!";
+          }
+
+</script>
+</body>
+</html>
