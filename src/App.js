@@ -1,22 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const name = "Hello World";
+  const date = new Date();
+  //name is variableName
+  // Hello World is string "" or '' which stored inside the variable called name
+  //you can not change the value
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p className="text-color">{name}</p>
+        {/* {curly braces} */}
+        <p>Today's Date</p>
+        <p>{date}</p>
       </header>
     </div>
   );
