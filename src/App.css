@@ -27,7 +27,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.menu-bar li a{
+  color : white;
+  text-decoration: none;
+}
 .App-link {
   color: #61dafb;
 }
