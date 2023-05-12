@@ -31,6 +31,13 @@
   color : white;
   text-decoration: none;
 }
+.menu-bar {
+  display: flex;
+}
+.menu-bar li{
+    list-style: none;
+    padding : 1rem;
+}
 .App-link {
   color: #61dafb;
 }

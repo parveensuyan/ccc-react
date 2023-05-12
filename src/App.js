@@ -15,10 +15,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p className="text-color">{name}</p>
         {/* <p>Today's Date</p>
         <p>{date.toLocaleDateString()}</p> */}
-        <User></User>
+        <User userName={name}></User>
       </header>
     </div>
   );
